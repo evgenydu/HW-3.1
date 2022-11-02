@@ -20,7 +20,7 @@
                                 <rect key="frame" x="75" y="109" width="280" height="128"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y6T-yo-YuP">
-                                        <rect key="frame" x="119.33333333333333" y="11.333333333333329" width="41.333333333333329" height="105.33333333333333"/>
+                                        <rect key="frame" x="119.33333333333333" y="25.666666666666657" width="41.333333333333329" height="77"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wda-vb-4R8">
                                                 <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
@@ -29,19 +29,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZJ-3C-yvd">
-                                                <rect key="frame" x="0.0" y="28.333333333333329" width="41.333333333333336" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRa-Rr-qOl">
-                                                <rect key="frame" x="0.0" y="56.666666666666679" width="41.333333333333336" height="20.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="28.333333333333343" width="41.333333333333336" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTV-4T-cuN">
-                                                <rect key="frame" x="0.0" y="85.000000000000014" width="41.333333333333336" height="20.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="56.666666666666693" width="41.333333333333336" height="20.333333333333336"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -95,8 +89,8 @@
                     <connections>
                         <outlet property="animatonLable" destination="Wda-vb-4R8" id="Gfb-CP-JX0"/>
                         <outlet property="curveLable" destination="YZJ-3C-yvd" id="aQr-E7-acU"/>
-                        <outlet property="durationLable" destination="sTV-4T-cuN" id="ZDO-VQ-UCZ"/>
-                        <outlet property="forceLable" destination="qRa-Rr-qOl" id="dAZ-ym-QYb"/>
+                        <outlet property="delayLable" destination="sTV-4T-cuN" id="ZDO-VQ-UCZ"/>
+                        <outlet property="runAnimationButton" destination="gGa-Uj-lX3" id="lBb-9f-1gj"/>
                         <outlet property="springAnimationView" destination="G7i-dz-vFh" id="7HX-tZ-e8e"/>
                     </connections>
                 </viewController>

@@ -15,6 +15,7 @@
 		9C64A4522912B54900199BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C64A4502912B54900199BED /* LaunchScreen.storyboard */; };
 		9C64A45B2912BEE500199BED /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 9C64A45A2912BEE500199BED /* SpringAnimation */; };
 		9C64A45D2912C6AB00199BED /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C64A45C2912C6AB00199BED /* DataStore.swift */; };
+		9C64A4692913126A00199BED /* AnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C64A4682913126A00199BED /* AnimationOptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9C64A4512912B54900199BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C64A4532912B54900199BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C64A45C2912C6AB00199BED /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		9C64A4682913126A00199BED /* AnimationOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationOptions.swift; path = "HW 3.1/AnimationOptions.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		9C64A45E2912F35700199BED /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C64A4682913126A00199BED /* AnimationOptions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C64A44A2912B54800199BED /* ViewController.swift in Sources */,
+				9C64A4692913126A00199BED /* AnimationOptions.swift in Sources */,
 				9C64A4462912B54800199BED /* AppDelegate.swift in Sources */,
 				9C64A4482912B54800199BED /* SceneDelegate.swift in Sources */,
 				9C64A45D2912C6AB00199BED /* DataStore.swift in Sources */,

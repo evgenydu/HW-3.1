@@ -29,7 +29,6 @@ class DataStore {
         "fadeInUp",
         "zoomIn",
         "zoomOut",
-        "fall",
         "shake",
         "flipX",
         "flipY",

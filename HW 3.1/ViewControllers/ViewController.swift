@@ -9,25 +9,36 @@ import UIKit
 import SpringAnimation
 
 class ViewController: UIViewController {
-
+    
+    var animationOptions = AnimationOptions()
+    
     @IBOutlet var animatonLable: UILabel!
     @IBOutlet var curveLable: UILabel!
-    @IBOutlet var forceLable: UILabel!
-    @IBOutlet var durationLable: UILabel!
-    
+    @IBOutlet var delayLable: UILabel!
+    @IBOutlet var runAnimationButton: SpringButton!
     @IBOutlet var springAnimationView: SpringView!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        animatonLable.text = "Animaion: \(animationOptions.animation)"
+        curveLable.text = "Curve: \(animationOptions.curve)"
+        delayLable.text = "Delay: \(animationOptions.delay)"
+        runAnimationButton.setTitle("Run \(animationOptions.animation)", for: .normal)
+    }
+    
     @IBAction func startSpringAnimation(_ sender: SpringButton) {
-        animatonLable.text = "Animaion: \(DataStore.shared.animations.randomElement() ?? "")"
-        curveLable.text = "Curve: \(DataStore.shared.curves.randomElement() ?? "")"
-        forceLable.text = "Force: \(Double.random(in: 0.9...1.3))"
-        durationLable.text = "Duration: 0.3"
+        animatonLable.text = "Animaion: \(animationOptions.animation)"
+        curveLable.text = "Curve: \(animationOptions.curve)"
+        delayLable.text = "Delay: \(animationOptions.delay)"
         
-        springAnimationView.animation = DataStore.shared.animations.randomElement() ?? ""
-        springAnimationView.curve = DataStore.shared.curves.randomElement() ?? ""
-        springAnimationView.force = Double.random(in: 0.9...1.3)
-        springAnimationView.duration = 0.3
+        springAnimationView.animation = animationOptions.animation
+        springAnimationView.curve = animationOptions.curve
+        springAnimationView.delay = animationOptions.delay
         springAnimationView.animate()
+        
+        animationOptions = AnimationOptions()
+        
+        runAnimationButton.setTitle("Run \(animationOptions.animation)", for: .normal)
     }
 }
 
